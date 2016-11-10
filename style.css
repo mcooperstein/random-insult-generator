@@ -1,0 +1,32 @@
+h1,
+h3,
+p {
+    text-align: center;
+    font-family: monospace;
+    color: red;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    width: 30%;
+    margin: auto;
+}
+
+input {
+    width: 95%;
+}
+
+button {
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    background-color: red;
+    border: 2px solid red;
+    font-size: 18px;
+    border-radius: 5px;
+}
