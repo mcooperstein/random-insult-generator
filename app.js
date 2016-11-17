@@ -17,11 +17,15 @@ $(document).ready(function () {
 
     $("#submit").click(function () {
         var person = $("input").val();
-        getInsult();
-        $("p").show();
-        $("p").text(person + insult);
-        $("#reset").show();
-        $("#submit").hide();
+        if (person.length == 0) {
+            alert("You must enter a name");
+        } else {
+            getInsult();
+            $("p").show();
+            $("p").text(person + insult);
+            $("#reset").show();
+            $("#submit").hide();
+        }
     });
 
     $("#reset").click(function () {
