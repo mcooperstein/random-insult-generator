@@ -37,6 +37,21 @@ $(document).ready(function () {
         }
     });
 
+    $(document).on("keydown", function (event) {
+        if (event.which === 13) {
+            var person = $("input").val();
+            if (person.length == 0) {
+                alert("You must enter a name");
+            } else {
+                getInsult();
+                $("p").show();
+                $("p").text(person + insult);
+                $("#reset").show();
+                $("#submit").hide();
+            }
+        }
+    });
+
     $("#reset").click(function () {
         location.reload();
     });
